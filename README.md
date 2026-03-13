@@ -57,21 +57,13 @@ Plataforma web de alto rendimiento desarrollada para una agencia de viajes inter
 
 ---
 
-## 🧠 Desafíos Técnicos y Soluciones
-
-> **Caso: Resolución de Bucles de Redirección**
-> * **El Problema:** Al implementar el ruteo dinámico, el middleware generaba rutas recursivas (ej: `/es/en`), causando errores 404 y bucles infinitos.
-> * **La Solución:** Desarrollé una lógica de filtrado en el Middleware de Next.js que valida la existencia del prefijo de idioma antes de aplicar la redirección por defecto. Se eliminaron "fantasmas" de frameworks innecesarios (Nuxt) detectados en una auditoría de seguridad, resultando en una arquitectura 100% limpia.
-> 
-> 
-
----
-
 ## 📸 Capturas de Pantalla
 
-| Vista Desktop | Vista Mobile (Hebreo RTL) |
-| --- | --- |
-| <img width="400" alt="Home ES" src="[https://github.com/user-attachments/assets/4018dafe-caeb-4bbc-9fc9-c0db1cd37bcc](https://github.com/user-attachments/assets/4018dafe-caeb-4bbc-9fc9-c0db1cd37bcc)" /> | <img width="200" alt="Mobile HE" src="[https://github.com/user-attachments/assets/c5a19c76-c9cd-41b7-bbbd-860bd1981b59](https://github.com/user-attachments/assets/c5a19c76-c9cd-41b7-bbbd-860bd1981b59)" /> |
+| Vista Mobile (Hebreo RTL) |
+| --- | 
+| <img width="358" height="755" alt="image" src="https://github.com/user-attachments/assets/e7580d8b-5dca-41d0-9f3f-bec6ad728f82" />
+ | <img width="358" height="756" alt="image" src="https://github.com/user-attachments/assets/3b2efe73-3612-46e8-bbbb-26c24079ccde" />
+ 
 
 ---
 
