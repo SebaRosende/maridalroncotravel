@@ -1,56 +1,81 @@
-✈️ Landing Page: Mari's Travel
+# ✈️ Mari's Travel - Descubriendo Perú
 
-Esta es la página de destino (Landing Page) oficial de Mari's Travel, una agencia de viajes especializada en ofrecer experiencias y tours inolvidables en Perú, con un enfoque particular en destinos icónicos como Machu Picchu y las 7 Lagunas de Ausangate.
+Este proyecto es una plataforma web moderna desarrollada para una agencia de viajes, enfocada en la escalabilidad, el rendimiento y la accesibilidad internacional. El desarrollo implementa una arquitectura robusta utilizando el **App Router de Next.js** y un sistema de internacionalización dinámico.
 
-El proyecto está diseñado para ser rápido, moderno y altamente adaptable a dispositivos móviles (responsive), utilizando una paleta de colores cálidos (naranja, negro y blanco) que refleja la energía y la belleza del destino.
+## 🚀 Demo
 
-✨ Características Principales
+Puedes ver la aplicación en producción aquí: https://marys-travel.com
 
-Autocontenido (Offline-Ready): El archivo es 100% independiente. No requiere conexión a internet para cargar los estilos CSS o la lógica, lo que garantiza que funciona al abrir el index.html directamente en cualquier navegador, incluso de forma local o a través de rutas file:///.
+---
 
-Diseño Responsive: Adaptable a cualquier dispositivo, desde teléfonos móviles hasta monitores de escritorio, utilizando CSS puro y media queries.
+## 🛠️ Tecnologías Aplicadas
 
-Paleta de Colores Cálidos: Uso de naranja, negro y blanco para transmitir calidez, profesionalismo y aventura.
+* **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+* **Biblioteca UI:** [React 19](https://react.dev/)
+* **Estilos:** [Tailwind CSS 4](https://tailwindcss.com/)
+* **Lenguaje:** [TypeScript](https://www.google.com/search?q=https://www.typescript.org/)
+* **Analíticas:** [Vercel Analytics](https://vercel.com/analytics)
+* **Iconografía:** [Lucide React](https://lucide.dev/)
 
-Enfoque en WhatsApp: Llamadas a la acción (CTAs) directas y visibles que enlazan con el canal de WhatsApp para una asesoría rápida.
+---
 
-Sección de Políticas de Privacidad: Una sección dedicada y clara de Políticas de Privacidad, requisito indispensable para habilitar la API de WhatsApp Business con Meta.
+## 🌟 Características Principales
 
-Integración Social: Enlaces directos al canal activo de Instagram de Mari's Travel usando iconos de emoji sencillos.
+### 1. Internacionalización (i18n) & Soporte RTL
 
-🛠️ Tecnologías Utilizadas
+La aplicación cuenta con soporte nativo para tres idiomas: **Español, Inglés y Hebreo**.
 
-Este proyecto es una solución de archivo único para facilitar su despliegue en plataformas como GitHub Pages.
+* **Ruteo Dinámico:** Implementación de rutas mediante `app/[lang]/` para una navegación limpia.
+* **Soporte RTL (Right-to-Left):** Ajuste automático de la dirección del documento para el idioma hebreo, garantizando una experiencia de usuario nativa.
+* **Middleware de Detección:** Un middleware personalizado gestiona las redirecciones basadas en el idioma preferido o la URL solicitada.
 
-HTML5: Estructura base del contenido.
+### 2. Infraestructura y Despliegue
 
-CSS Interno (Puro): Todos los estilos de color, tipografía y layout están definidos directamente en la etiqueta <style> del documento, utilizando CSS puro y variables CSS.
+* **Vercel Edge Network:** Despliegue optimizado para baja latencia global.
+* **Seguridad:** Auditoría de dependencias rigurosa para garantizar un entorno libre de vulnerabilidades (0 high severity vulnerabilities).
+* **SEO Optimizado:** Generación dinámica de metadatos según el idioma seleccionado.
 
-JavaScript Nativo: Implementación de la lógica básica del menú móvil.
+### 3. Rendimiento y UX
 
-Web Fonts (Inter): La única dependencia externa es la fuente Inter de Google Fonts para la tipografía.
+* **Fuentes Optimizadas:** Uso de `next/font` para cargar la tipografía *Assistant* sin parpadeos (CLS bajo).
+* **Diseño Responsive:** Interfaz adaptativa para móviles y escritorio con Tailwind CSS.
 
-🚀 Despliegue y Uso
+---
 
-1. Despliegue en GitHub Pages
+## 📂 Estructura del Proyecto
 
-Dado que este proyecto es un único archivo HTML estático sin dependencias complejas, el despliegue es extremadamente sencillo:
+```text
+├── app/
+│   └── [lang]/         # Rutas dinámicas por idioma
+│       ├── layout.tsx  # Configuración global, SEO y Analíticas
+│       └── page.tsx    # Página principal
+├── components/         # Componentes reutilizables (Navbar, Footer, etc.)
+├── lib/                # Lógica de i18n y diccionarios
+├── public/             # Activos estáticos (Imágenes, Logos)
+└── middleware.ts       # Lógica de ruteo y redirección de idiomas
 
-Asegúrate de que el archivo index.html (la última versión autocontenida) esté en la raíz de tu repositorio de GitHub.
+```
 
-Ve a la configuración del repositorio (Settings).
+---
 
-Selecciona la opción Pages.
+## 📸 Screenshots
 
-Elige la rama main (o master) y la carpeta raíz (/) como fuente de publicación.
-
-Guarda los cambios. GitHub Pages desplegará automáticamente la página en la URL proporcionada.
-
-2. Ejecución Local (Para Revisión Rápida)
-
-¡No se requiere un servidor local! Puedes abrir el archivo index.html directamente con doble clic en tu navegador y todos los estilos se cargarán al instante.
-
-Si deseas utilizar funciones avanzadas de desarrollo (como el refresco automático), puedes seguir utilizando la extensión Live Server de Visual Studio Code.
+| Home (Español) | Mobile View (Hebreo - RTL) |
+<img width="368" height="750" alt="image" src="https://github.com/user-attachments/assets/4018dafe-caeb-4bbc-9fc9-c0db1cd37bcc" />
+<img width="349" height="597" alt="image" src="https://github.com/user-attachments/assets/c5a19c76-c9cd-41b7-bbbd-860bd1981b59" />
 
 
-Creado con 🧡 para Mari's Travel.
+
+
+---
+
+## 👤 Autor
+
+**Sebastian Rosende**
+
+* Estudiante de Desarrollo de Aplicaciones en **UNICEN**.
+
+
+
+
+
